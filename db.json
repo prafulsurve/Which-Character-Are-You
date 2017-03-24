@@ -1,4 +1,6 @@
-    [{
+{
+      "quiz": [{
+        "id" : 0,
         "characters": ["Harry", "Ron", "Hermoine"],
         "qa": [
             {
@@ -21,7 +23,6 @@
                     },
                     {
                         "name": "no",
-                        "name": "no",
                         "charscore": [1, 1, 0]
                     }
                 ]
@@ -40,3 +41,4 @@
             }
         ]
     }]
+}
