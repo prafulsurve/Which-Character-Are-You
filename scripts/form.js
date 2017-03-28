@@ -25,6 +25,11 @@
             'class': 'form-group'
         });
 
+        var $submit_button = $('<button></button>', {
+            'class' : 'btn btn-primary',
+            'id' : 'submit_btn'
+        });
+        $submit_button.html('Submit');
         var $label_questions = new Array();
         var $div_radio = new Array(); //2D
         var $label_answers = new Array() //2D
@@ -32,7 +37,9 @@
 
         for (var i = 0; i < data.length; i++) {
 
-            $label_questions[i] = $('<label></label>')
+            $label_questions[i] = $('<label></label>', {
+                'class': 'form-check-label'
+            });
             $label_questions[i].text(data[i].question);
             $div_form_group.append($label_questions[i]);
             //2D def
@@ -43,13 +50,15 @@
             for(var j = 0; j < data[i].answers.length; j++) {
 
                 $div_radio[i][j] = $('<div></div>', {
-                    'class': 'radio form-check'
+                    'class': 'form-check'
                 });
-                $label_answers[i][j] = $('<label></label>');
+                $label_answers[i][j] = $('<label></label>', {
+                    'class': 'form-check-label'
+                });
                 $radio[i][j] = $('<input></input>', {
                   type: 'radio',
                   name: 'answer' + i,
-                  'class': 'radio form-check-input'
+                  'class': 'form-check-input'
                 });
                 $radio[i][j].prop('value',data[i].answers[j].charscore);
                 $div_radio[i][j].append($radio[i][j]);
@@ -59,6 +68,7 @@
             }
 
         }
+        $div_form_group.append($submit_button);
         this.$element = $div_form_group;
     }
     App.Form = Form;

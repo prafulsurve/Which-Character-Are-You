@@ -29,14 +29,11 @@
       });
     };
 
-    RemoteServer.prototype.getAnswers = function(key, cb) {
+    RemoteServer.prototype.getCharacters = function(key, cb) {
       $.get(this.serverUrl + '/' + key, function (serverResponse) {
-        var ans = [];
-        for (var i = 0; i < serverResponse.qa.length; i++) {
-            ans.push(serverResponse.qa[i].answers);
-        }
+        var data = serverResponse.characters;
         if(cb) {
-            cb(ans);
+            cb(data);
         }
       });
     };

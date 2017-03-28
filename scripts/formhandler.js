@@ -20,8 +20,44 @@
         fn(data);
       });
     });
+  };
 
-  }
+  FormHandler.prototype.addSubmitHandler = function(remoteServer, fn) {
+      console.log('Setting submit handler for form');
+      this.$formElement.on('submit', function(event) {
+          event.preventDefault();
+          var sum = new Array();
+          var data = {};
+          var score = new Array();
+          $(this).serializeArray().forEach(function(item) {
+              (item.value).split(',').forEach(function (num) {
+                  score.push(parseInt(num));
+              });
+              if (sum.length === 0) {
+                  for (var i = 0; i < score.length; i++) sum[i] = 0;
+              }
+              data[item.name] = score;
+              sum = sum.map(function (num, idx) {
+                  return num + score[idx];
+              });
+              console.log(item.name + ' is ' + score);
+              score = [];
+          });
+
+          console.log(data);
+          console.log(sum);
+
+          var index = sum.indexOf(Math.max(...sum));
+          remoteServer.getCharacters(0, function(characters) {
+            fn(characters[index]);
+          });
+          //fn(data)
+          //.then(function () {
+        //      this.reset();
+        //l      this.elements[0].focus();
+        //  }.bind(this));
+      });
+  };
 
   App.FormHandler = FormHandler;
   window.App = App;

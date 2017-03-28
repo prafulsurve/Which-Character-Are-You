@@ -1,6 +1,7 @@
 (function(window) {
     'use strict';
     var FORM_SELECTOR = '[data-quiz="form"]';
+    var $ = window.jQuery;
     var SERVER_URL = 'http://localhost:3002/quiz';
     var App = window.App;
     var RemoteServer = App.RemoteServer;
@@ -13,4 +14,11 @@
      formHandler.onLoadHandler(remoteServer, function(data) {
        form.addQuestions(data);
      });
+
+     formHandler.addSubmitHandler(remoteServer, function(data) {
+        console.log(data);
+        $('#myModal .modal-title').text('You are ' + data);
+        $('#myModal .modal-body').text('Char Desc');
+         //return myTruck.createOrder.call(myTruck, data)
+      });
 })(window);
