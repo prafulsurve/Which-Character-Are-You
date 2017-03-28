@@ -2,7 +2,7 @@
     'use strict';
     var App = window.App || {};
     var $ = window.jQuery;
-
+    // No need of selector
     function FormHandler(selector) {
         if (!selector) {
             throw new Error('No selector provided');

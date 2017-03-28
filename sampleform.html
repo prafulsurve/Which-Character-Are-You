@@ -1,117 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<html><head>
     <meta charset="utf-8">
-    <title>Sample form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-  </head>
+    <title>Which Character Are You?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
 
-  <body class="container">
+<body>
     <header>
         <h1>Quiz 1</h1>
     </header>
     <section>
-      <div class="panel panel-default">
-        <div class="panel-body quiz">
-          <form>
-
-  <fieldset class="form-group">
-    <legend>1) Do you play chess?</legend>
-
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-        YES
-      </label>
-    </div>
-    <div class="form-check ">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
-        NO
-      </label>
-    </div>
-  </fieldset>
-
-  <!-- here  -->
-
-  <fieldset class="form-group">
-    <legend>2) Do you spell magic correctly?</legend>
-
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios22" value="option2">
-        YES
-      </label>
-    </div>
-    <div class="form-check ">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios23" value="option3">
-        NO
-      </label>
-    </div>
-  </fieldset>
-
-  <!-- here  -->
-
-  <fieldset class="form-group">
-    <legend>3) Do you have a scar?</legend>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios31" value="option1" checked>
-        YES
-      </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios32" value="option2">
-        NO
-      </label>
-    </div>
-  </fieldset>
-
-  <!-- here  -->
-
-  <fieldset class="form-group">
-    <legend>4) What is your name?</legend>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios41" value="option1" checked>
-        YES
-      </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios42" value="option2">
-        NO
-      </label>
-    </div>
-
-  </fieldset>
-
-  <!-- here  -->
-
-  <fieldset class="form-group">
-    <legend>5) What is your name?</legend>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios51" value="option1" checked>
-        YES
-      </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios52" value="option2">
-        NO
-      </label>
-    </div>
-  </fieldset>
-
-
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+        <div class="panel panel-default">
+            <div class="panel-body" quiz-questions="form">
+              <form data-quiz="form">
+              <div data-quiz="div">
+                <label>Do you play Chess?</label>
+                <div class="radio">
+                  <input type="radio" name="answer0" value="0,1,0">
+                  <label>yes</label>
+                </div>
+                <div class="radio form-check">
+                  <input type="radio" class="form-check-input" name="answer0" value="1,0,1">
+                  <label class="form-check-label">no</label>
+                </div>
+                <label class="form-check-label">Do you spell magic correctly?</label>
+                <div class="radio form-check-input">
+                  <input type="radio" name="answer1" value="0,0,1">
+                  <label>yes</label>
+                </div>
+                <div class="radio form-check-input">
+                  <input type="radio" name="answer1" value="1,1,0">
+                  <label>no</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
         </div>
-      </div>
     </section>
-  </body>
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/todc-bootstrap/3.3.6-3.3.6/js/bootstrap.min.js" charset="utf-8">
+    </script>
+
+</body></html>

@@ -22,12 +22,9 @@
 
     RemoteServer.prototype.getQuestion = function(key, cb) {
       $.get(this.serverUrl + '/' + key, function (serverResponse) {
-        var q = [];
-        for (var i = 0; i < serverResponse.qa.length; i++) {
-            q.push(serverResponse.qa[i].question);
-        }
+        var data = serverResponse.qa;
         if(cb) {
-            cb(q);
+            cb(data);
         }
       });
     };
