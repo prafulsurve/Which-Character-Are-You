@@ -20,6 +20,9 @@
         $('#myModal .modal-title').text('You are ' + data);
         $('#myModal .modal-body').text('Char Desc');
          //return myTruck.createOrder.call(myTruck, data)
+<<<<<<< HEAD
          $('#myModal').modal('show');
+=======
+>>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
       });
 })(window);
