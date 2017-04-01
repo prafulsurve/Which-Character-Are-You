@@ -1,0 +1,279 @@
+body {
+    font-size: 23px;
+    }
+
+
+a {
+    color: #00f;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #34495E;
+}
+
+
+li {
+    float: left;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 50px 50px;
+    text-decoration: none;
+}
+
+.option {
+    position: relative;
+    left: 400px;
+}
+
+.abc {
+    position: absolute;
+    left: 70px;
+}
+
+.option1 {
+    width: 50px;
+    position: absolute;
+    right: 450px;
+}
+
+.option2 {
+    width: 50px;
+    position: absolute;
+    right: 300px;
+}
+
+.option3 {
+    width: 50px;
+    position: absolute;
+    right: 150px;
+}
+
+body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	overflow: hidden;
+}
+/* Change the link color to #111 (black) on hover */
+
+
+
+.active {
+    background-color: #4CAF50;
+}
+
+#clouds{
+	padding: 50px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+
+	position: relative;
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute;
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+  top: 200px;
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+  opacity: 0.95;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 150px; top: -230px;
+
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.9; /*opacity proportional to the size*/
+
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.35; /*opacity proportional to the size*/
+
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -20px;
+
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.95; /*opacity proportional to the size*/
+
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+#custom {
+  font-size: 15px;
+  color: #5D6D7E;
+}
+
+div.cq {
+    background-image: url("https://media.giphy.com/media/NFG00qYw7zkm4/giphy.gif");
+    display: inline-block;
+    float: left;
+    width: 350px;
+    background-color: white;
+    color: white;
+    margin-left: 200px;
+    padding-left: 20px;
+    bottom: 0;
+    left: 0;
+}
+
+div.pq {
+    display: inline-block;
+    float: right;
+    width: 350px;
+    background-color: black;
+    margin-right: 200px;
+    padding-right: 20px;
+    bottom: 0;
+    right: 0;
+  }
+
+p {
+    color:#C70039;
+    font-weight: bold;
+}
+
+h5 {
+    color: #5D6D7E;
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #F08080;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+#rcorners3 {
+    border-radius: 25px;
+    border: 2px solid #F08080;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+.button:active {
+  background-color: #e7e7e7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2:active {
+  background-color: #e7e7e7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button {
+    background-color: #C70039;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #C70039;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

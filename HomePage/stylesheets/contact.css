@@ -1,0 +1,60 @@
+body {
+    font-size: 17px;
+    }
+
+a {
+    color: #00f;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #34495E;
+    font-size: 23px;
+}
+
+li {
+    float: left;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 50px 50px;
+    text-decoration: none;
+}
+
+.option {
+    position: relative;
+    left: 400px;
+}
+
+.abc {
+    position: absolute;
+    left: 70px;
+}
+
+.option1 {
+    width: 50px;
+    position: absolute;
+    right: 450px;
+}
+
+.option2 {
+    width: 50px;
+    position: absolute;
+    right: 300px;
+}
+
+.option3 {
+    width: 50px;
+    position: absolute;
+    right: 150px;
+}
+
+
+
+.panel panel-default{
+  margin: 30px 30px 60px 30px;
+}

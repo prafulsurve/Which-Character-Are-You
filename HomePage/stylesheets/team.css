@@ -1,0 +1,172 @@
+body {
+    font-size: 17px;
+    }
+
+a {
+    color: #00f;
+}
+
+ul.bckgnd {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #34495E;
+    font-size: 23px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 50px 50px;
+    text-decoration: none;
+}
+
+.option {
+    position: relative;
+    left: 400px;
+}
+
+.abc {
+    position: absolute;
+    left: 70px;
+}
+
+.option1 {
+    width: 50px;
+    position: absolute;
+    right: 450px;
+}
+
+.option2 {
+    width: 50px;
+    position: absolute;
+    right: 300px;
+}
+
+.option3 {
+    width: 50px;
+    position: absolute;
+    right: 150px;
+
+}
+
+
+li
+  {
+      display: block;
+      float:left;
+      color: black;
+      padding: 50px 50px;
+      text-decoration: none;
+      margin: -30px 0px -60px 0px
+  }
+
+
+  .praful {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example1 {
+      0%   { left:0px; top:200px;}
+      25%  { left:0px; top:150px;}
+      50%  { left:0px; top:100px;}
+      75%  { left:0px; top:50px;}
+      100% { left:0px; top:0px;}
+  }
+
+  .smaran {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example2 {
+      0%   { left:1px; top:200px;}
+      25%  { left:1px; top:150px;}
+      50%  { left:1px; top:100px;}
+      75%  { left:1px; top:50px;}
+      100% { left:1px; top:0px;}
+  }
+
+  .varun {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      -webkit-animation-name: example3; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example3 {
+      0%   { left:0px; top:200px;}
+      25%  { left:0px; top:150px;}
+      50%  { left:0px; top:100px;}
+      75%  { left:0px; top:50px;}
+      100% { left:0px; top:0px;}
+  }
+
+  .harshada {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      -webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example4 {
+      0%   { left:1px; top:450px;}
+      25%  { left:1px; top:400px;}
+      50%  { left:1px; top:350px;}
+      75%  { left:1px; top:300px;}
+      100% { left:1px; top:250px;}
+  }
+  .vidya {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      -webkit-animation-name: example5; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example5 {
+      0%   { left:2px; top:450px;}
+      25%  { left:2px; top:400px;}
+      50%  { left:2px; top:350px;}
+      75%  { left:2px; top:300px;}
+      100% { left:2px; top:250px;}
+  }
+  .apoorva {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      -webkit-animation-name: example6; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 0.4s; /* Safari 4.0 - 8.0 */
+
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example6 {
+      0%   { left:2px; top:450px;}
+      25%  { left:2px; top:400px;}
+      50%  { left:2px; top:350px;}
+      75%  { left:2px; top:300px;}
+      100% { left:2px; top:250px;}
+  }

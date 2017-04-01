@@ -1,0 +1,44 @@
+{
+      "quiz": [{
+        "id" : 0,
+        "characters": ["Harry", "Ron", "Hermoine"],
+        "qa": [
+            {
+                "question": "Do you play Chess?",
+                "answers": [{
+                        "name": "yes",
+                        "charscore": [0, 1, 0]
+                    },
+                    {
+                        "name": "no",
+                        "charscore": [1, 0, 1]
+                    }
+                ]
+            },
+            {
+                "question": "Do you spell magic correctly?",
+                "answers": [{
+                        "name": "yes",
+                        "charscore": [0, 0, 1]
+                    },
+                    {
+                        "name": "no",
+                        "charscore": [1, 1, 0]
+                    }
+                ]
+            },
+            {
+                "question": "Do you have a Scar?",
+                "answers": [{
+                        "name": "yes",
+                        "charscore": [1, 0, 0]
+                    },
+                    {
+                        "name": "no",
+                        "charscore": [0, 1, 1]
+                    }
+                ]
+            }
+        ]
+    }]
+}

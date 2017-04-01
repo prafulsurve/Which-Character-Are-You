@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Create Your Own Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/business-and-finance-41/100/question_quiz_mark_bubble_ask_qa-512.png">
+    <style>
+        body {
+            background: rgb(216, 228, 234);
+        }
+
+        h1.about {
+            margin-left: 700px;
+        }
+
+        hr {
+            border-top: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+  <ul class="sze">
+    <li class="option">
+        <h1 style="color:white"><span style="font-size:50px; font-family:Verdana">QUIZ</span><span style="font-size:25px; font-family:Comic Sans MS"> Fobia
+      <span class="abc" style="font-size:17px; font-family:times">online quiz creator</span></span></h1></li>
+    <li><a href="index.html"><span class="option1" style="font-style: bold">Home</span></a></li>
+    <li><a href="team.html"><span class="option2">About</span></a></li>
+    <li><a href="contact.html"><span class="option3" style="color:rgb(88, 192, 244)">Contact</span></a></li>
+</ul>
+    <h1 class="about" style="font-style:bold; text-shadow: 2px 2px white;">Get in touch</h1>
+    <hr width="30%">
+    <section>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form data-contact="form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" name="name" id="name" autofocus required pattern="[a-zA-Z\s]+" placeholder="Enter name">
+                </div>
+
+                <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select>
+                        <option value="options">Choose one</option>
+                        <option value="option1" >General customer service</option>
+                        <option value="option2">Suggestions</option>
+                        <option value="option3">Product Support</option>
+                    </select>
+                </div>
+                <div class="form-groups">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" rows="10" col="10" id="comment"></textarea>
+                </div>
+                <div >
+                  <button type="submit" class="btn btn-default" >Send Message</button>
+                </div>
+
+              </form>
+        </div>
+</div>
+</section>
+</body>
+
+</html>
