@@ -25,19 +25,15 @@
             'class': 'form-group'
         });
 
-<<<<<<< HEAD
-
-
         var $button_groups =$('<div></div>', {
             'class': 'btn-toolbar'
         });
-=======
->>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
+
         var $submit_button = $('<button></button>', {
             'class' : 'btn btn-primary',
             'id' : 'submit_btn'
         });
-<<<<<<< HEAD
+
         var $reset_button = $('<button></button>', {
             'class' : 'btn btn-primary',
             'id' : 'reset_btn'
@@ -55,9 +51,8 @@
         $button_groups.append($submit_button, $reset_button,$back_button);
         //$button_groups.append($reset_button);
         //$button_groups.append($back_button);
-=======
+
         $submit_button.html('Submit');
->>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
         var $label_questions = new Array();
         var $div_radio = new Array(); //2D
         var $label_answers = new Array() //2D
@@ -66,14 +61,11 @@
         for (var i = 0; i < data.length; i++) {
 
             $label_questions[i] = $('<label></label>', {
-<<<<<<< HEAD
+
                 'class': 'form-check-label',
                 'style': 'font-size : 20px'
-                  });
-=======
-                'class': 'form-check-label'
             });
->>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
+
             $label_questions[i].text(data[i].question);
             $div_form_group.append($label_questions[i]);
             //2D def
@@ -84,11 +76,9 @@
             for(var j = 0; j < data[i].answers.length; j++) {
 
                 $div_radio[i][j] = $('<div></div>', {
-<<<<<<< HEAD
-                    'class': 'radio'
-=======
-                    'class': 'form-check'
->>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
+
+                    'class': 'radio form-check'
+
                 });
                 $label_answers[i][j] = $('<label></label>', {
                     'class': 'form-check-label'
@@ -96,12 +86,10 @@
                 $radio[i][j] = $('<input></input>', {
                   type: 'radio',
                   name: 'answer' + i,
-<<<<<<< HEAD
+
                   'class': 'form-check-input',
                   'style': 'margin:2.5px'
-=======
-                  'class': 'form-check-input'
->>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
+
                 });
                 $radio[i][j].prop('value',data[i].answers[j].charscore);
                 $div_radio[i][j].append($radio[i][j]);
@@ -111,11 +99,11 @@
             }
 
         }
-<<<<<<< HEAD
+
         $div_form_group.append($button_groups);
-=======
+
         $div_form_group.append($submit_button);
->>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
+
         this.$element = $div_form_group;
     }
     App.Form = Form;

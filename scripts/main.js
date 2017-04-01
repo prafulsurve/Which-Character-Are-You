@@ -5,12 +5,16 @@
     //SERVER_URL = 'http://localhost:3002/quiz';
     //App.SERVER_URL = SERVER_URL;
     var SERVER_URL  = "";
-    socket.on('setquizid', function(data) {
-        SERVER_URL = data.quizurl;
-        //console.log(remoteServer);
+    let myPromise = new Promise((resolve, reject) => {
+      socket.on('setquizid', function(data) {
+          SERVER_URL = data.quizurl;
+          resolve("Success!");
+      });
     });
 
 
+
+  myPromise.then((successMessage) => {
     var FORM_SELECTOR = '[data-quiz="form"]';
     var $ = window.jQuery;
     var App = window.App;
@@ -26,16 +30,10 @@
      });
 
      formHandler.addSubmitHandler(remoteServer, function(data) {
-        console.log(data);
-        $('#myModal .modal-title').text('You are ' + data);
-        $('#myModal .modal-body').text('Char Desc');
-<<<<<<< Updated upstream
-         //return myTruck.createOrder.call(myTruck, data)
-<<<<<<< HEAD
-         $('#myModal').modal('show');
-=======
->>>>>>> e74922f320d1ff70c0c554f6568b656e565128b4
-=======
->>>>>>> Stashed changes
+          console.log(data);
+          $('#myModal .modal-title').text('You are ' + data);
+          $('#myModal .modal-body').text('Char Desc');
+          $('#myModal').modal('show');
       });
+    });
 })(window);

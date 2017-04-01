@@ -50,12 +50,7 @@
           var index = sum.indexOf(Math.max(...sum));
           remoteServer.getCharacters(0, function(characters) {
             fn(characters[index]);
-          });
-          //fn(data)
-          //.then(function () {
-        //      this.reset();
-        //l      this.elements[0].focus();
-        //  }.bind(this));
+          })
       });
   };
 
