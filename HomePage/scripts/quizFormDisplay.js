@@ -26,11 +26,12 @@
     });
 var $list_quiz = new Array();
 var $list_quizurl = new Array();
-var $list_quiz = $ ('<li></li>',{
-  'data-filter-text' : 'li',
 
-});
     for(var i= 0; i< quizList.length; i++){
+      var $list_quiz = $ ('<li></li>',{
+        'data-filter-text' : 'li',
+
+      });
 
       $list_quizurl[i] = $('<a href="http://localhost:3005/'+ quizList[i].id+'">'+ quizList[i].quizName+'</a>');
       $list_quiz.append($list_quizurl[i]);
