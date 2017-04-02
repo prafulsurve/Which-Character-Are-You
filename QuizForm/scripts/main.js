@@ -1,6 +1,6 @@
 (function(window) {
     'use strict';
-    var socket = io.connect('http://localhost:3000');
+    var socket = io.connect('http://localhost:3005');
     //var SERVER_URL = App.SERVER_URL;
     //SERVER_URL = 'http://localhost:3002/quiz';
     //App.SERVER_URL = SERVER_URL;
@@ -16,6 +16,7 @@
 
   myPromise.then((successMessage) => {
     var FORM_SELECTOR = '[data-quiz="form"]';
+
     var $ = window.jQuery;
     var App = window.App;
     var RemoteServer = App.RemoteServer;
@@ -25,9 +26,12 @@
     var Form = App.Form;
     var form = new Form(FORM_SELECTOR);
 
+
      formHandler.onLoadHandler(remoteServer, function(data) {
        form.addQuestions(data);
      });
+
+
 
      formHandler.addSubmitHandler(remoteServer, function(data) {
           console.log(data);

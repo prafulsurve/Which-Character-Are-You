@@ -20,8 +20,8 @@
       });
     };
 
-    RemoteServer.prototype.getQuestion = function(key, cb) {
-      $.get(this.serverUrl + '/' + key, function (serverResponse) {
+    RemoteServer.prototype.getQuestion = function(cb) {
+      $.get(this.serverUrl, function (serverResponse) {
         var data = serverResponse.qa;
         if(cb) {
             cb(data);
@@ -29,8 +29,17 @@
       });
     };
 
-    RemoteServer.prototype.getCharacters = function(key, cb) {
-      $.get(this.serverUrl + '/' + key, function (serverResponse) {
+    RemoteServer.prototype.getQuizName = function(cb){
+      $.get(this.serverUrl, function(serverResponse){
+        var quizList= serverResponse.quizName;
+        if(cb){
+          cb(data);
+        }
+      });
+    }
+
+    RemoteServer.prototype.getCharacters = function(cb) {
+      $.get(this.serverUrl, function (serverResponse) {
         var data = serverResponse.characters;
         if(cb) {
             cb(data);

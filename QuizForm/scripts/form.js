@@ -52,7 +52,7 @@
         //$button_groups.append($reset_button);
         //$button_groups.append($back_button);
 
-        $submit_button.html('Submit');
+
         var $label_questions = new Array();
         var $div_radio = new Array(); //2D
         var $label_answers = new Array() //2D
@@ -102,7 +102,7 @@
 
         $div_form_group.append($button_groups);
 
-        $div_form_group.append($submit_button);
+
 
         this.$element = $div_form_group;
     }

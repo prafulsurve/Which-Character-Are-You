@@ -3,12 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Play quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
   </head>
   <body>
     <ul>
       <li><a href="#" target="_top">Quiz1</a></li>
       <li><a href="#" target="_top">Quiz2</a></li>
     </ul>
+    <section>
+        <div class="panel panel-default">
+            <div class="panel-body quizList" quiz-list="form">
+              <form data-quizlist="form">
+              </form>
+            </div>
+        </div>
+      </section>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/todc-bootstrap/3.3.6-3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+
+      <script src="scripts/remoteserver.js" charset="utf-8"></script>
+      <script src="scripts/quizFormDisplay.js" charset="utf-8"></script>
+      <script src="scripts/quizDisplayHandler.js" charset="utf-8"></script>
+      <script src="scripts/mainPlay.js" charset="utf-8"></script>
   </body>
 </html>

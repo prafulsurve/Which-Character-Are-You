@@ -16,7 +16,7 @@
     console.log('In On Load Handler');
     $(document).ready(function(){
       // passing 0 to fetch quiz 1
-      remoteServer.getQuestion(0, function(data) {
+      remoteServer.getQuestion(function(data) {
         fn(data);
       });
     });
@@ -48,7 +48,7 @@
           console.log(sum);
 
           var index = sum.indexOf(Math.max(...sum));
-          remoteServer.getCharacters(0, function(characters) {
+          remoteServer.getCharacters(function(characters) {
             fn(characters[index]);
           })
       });
