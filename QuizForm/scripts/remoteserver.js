@@ -11,8 +11,12 @@
   }
 
   RemoteServer.prototype.add = function (val) {
-      return $.post(this.serverUrl, val, function (serverResponse) {
-          console.log(serverResponse);
+
+      $.ajax({
+          type: "POST",
+          url: this.serverUrl,
+          data: JSON.stringify(val),
+          contentType: "application/json"
       });
   };
 
