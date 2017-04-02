@@ -10,6 +10,12 @@
         this.serverUrl = url;
   }
 
+  RemoteServer.prototype.add = function (val) {
+      return $.post(this.serverUrl, val, function (serverResponse) {
+          console.log(serverResponse);
+      });
+  };
+
   RemoteServer.prototype.getAll = function(cb){
 
       return $.get(this.serverUrl, function (serverResponse){
