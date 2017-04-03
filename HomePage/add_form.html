@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Create Quiz</title>
+    <!--link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+    <h1 class="text-primary">Create Quiz</h1>
+
+    <section class="questions">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form id="questions_form" method="POST">
+                  <div class="">
+                    <label for="quiz_name">Quiz Title:</label>
+                    <input type="text" class="form-control" id="quiz_name" name="quizName" placeholder="Enter the title of Quiz "><br>
+                  </div>
+                    <div class="" id="dynamicInput">
+                        <div class="form-group">
+                            <label for="field1">Enter your Question 1</label>
+                            <input type="text" class="form-control" id="field1" name="qstn1" placeholder="Enter your question here">
+                        </div>
+                        <div class="form-group form-inline ">
+                            <input type="text" id="left-input" class="form-control" name="ans1_1" placeholder="Answer choice 1">
+                            <input type="text" id="middle-input" class="form-control" name="ans1_2" placeholder="Answer choice 2">
+                        </div>
+                    </div>
+                    <div class="">
+                        <input type="button" class="btn btn-primary" value="+ Add Question" onclick="addQuestion('dynamicInput');">
+                        <input class="btn btn-primary" type="button" name="next1" value="Next" id="next-btn1">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="outcomes" style="display:none">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p class="h3">Outcomes:</p>
+          <form class="" id="outcomes_form" action="" method="post">
+            <div class="" id="characters_div">
+              <fieldset>
+                <div class="form-group">
+                  <input class="form-control" type="text" name="char1" value="" placeholder="Outcome title">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="char_desc1" rows="3" value="" placeholder="Outcome description"></textarea>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="form-group">
+                  <input class="form-control" type="text" name="char2" value="" placeholder="Outcome title">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="char_desc2" rows="3" value="" placeholder="Outcome description"></textarea>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="form-group">
+                  <input class="form-control" type="text" name="char3" value="" placeholder="Outcome title">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="char_desc3" rows="3" value="" placeholder="Outcome description"></textarea>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="">
+                <input type="button" class="btn btn-primary" value="+ Add Outcome" onclick="addCharacter('characters_div');">
+                <input class="btn btn-primary" type="button" name="next1" value="Next" id="next-btn2" >
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3rd section. It is for questions,answers and character mappings -->
+
+    <section class="character_mappings" style="display:none">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p class="h3">Answers:</p>
+          <p>Enter Character Score in the form of Array in the textbox. Example: [1,0,0]</p>
+          <form class="" action="" method="" id="char_map">
+            <div class="answers_mappings" id="mappings">
+            </div>
+            <div class="">
+                <input class="btn btn-primary" type="button" value="Create Quiz" id="create_quiz_btn" >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="scripts/remoteserver.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/addQuestion.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>
