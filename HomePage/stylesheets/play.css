@@ -1,0 +1,64 @@
+body {
+    font-size: 17px;
+    }
+
+a.xyz {
+    color: white;
+}
+
+ul.header-list {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #34495E;
+    font-size: 23px;
+}
+div{
+  border : none !important;
+}
+
+li.option-list{
+  float: left;
+}
+
+li{
+
+  color: white;
+}
+
+#option {
+    position: relative;
+    left: 400px;
+}
+
+.xyz {
+    display: block;
+    color: white;
+    padding: 50px 50px;
+    text-decoration: none;
+}
+
+
+
+#abc {
+    position: absolute;
+    left: 70px;
+}
+
+#home {
+    width: 50px;
+    position: absolute;
+    right: 450px;
+}
+
+#about {
+    width: 50px;
+    position: absolute;
+    right: 300px;
+}
+
+#contact {
+
+    width: 50px;
+    position: absolute;
+    right: 150px;
+}
