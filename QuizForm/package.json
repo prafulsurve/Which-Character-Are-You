@@ -1,0 +1,21 @@
+{
+  "name": "which-character-are-you",
+  "version": "1.0.0",
+  "description": "This app provides the user to create their own 'Which Character Are You' quiz and they can even play the quiz",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prafulsurve/Which-Character-Are-You.git"
+  },
+  "author": "Praful Surve, Harshada Chaundkar, Smaran Madikanti, Varun Krishna, Apoorva Joshi, Vidya Muniraju",
+  "license": "ISC",
+  "homepage": "https://github.com/prafulsurve/Which-Character-Are-You#readme"
+}

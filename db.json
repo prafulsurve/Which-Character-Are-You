@@ -1,83 +1,331 @@
 {
-  "quiz": [
-    {
-      "quizName": "Which  Harry potter Character you are",
-      "characters": [
-        "Harry",
-        "Hermoine",
-        "Ron"
-      ],
-      "char_desc": [
-        "I am Harry",
-        "I am Hermoine",
-        "I am Ron"
-      ],
-      "qa": [
+    "quiz": [{
+            "id": 0,
+            "quizName": "Which Harry Potter Character Are You?",
+            "characters": ["Harry", "Ron", "Hermoine"],
+            "char_desc" : ["Hey, I am Harry","Hey, I am Ron","Hey, I am Hermoine"],
+            "qa": [{
+                    "question": "Do you play Chess?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 1, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 0, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you spell magic correctly?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 1]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 0]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you have a Scar?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [1, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [0, 1, 1]
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
         {
-          "question": "Do you have scrar?",
-          "answers": [
-            {
-              "name": "Yes",
-              "charscore": [
-                1,
-                0,
-                0
-              ]
-            },
-            {
-              "name": "No",
-              "charscore": [
-                0,
-                1,
-                1
-              ]
-            }
-          ]
+            "id": 1,
+            "characters": ["Rachel", "Monica", "Pheobe", "Ross", "Chandler", "Joey"],
+            "quizName": "Which Friends character Are you?",
+            "qa": [{
+                    "question": "Are you bossy?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 1, 0, 0, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 0, 1, 1, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Were you popular in high school?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [1, 0, 0, 0, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [0, 1, 1, 1, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you like to play guitar?",
+                    "answers": [{
+                            "name": "Yes",
+                            "charscore": [0, 0, 1, 0, 0, 0]
+                        },
+                        {
+                            "name": "No",
+                            "charscore": [1, 1, 0, 1, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Are you a know-it-all?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 1, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 0, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Would it kill you if one day you woke up without a good sense of humor?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 0, 1, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 1, 0, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you hate sharing food?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 0, 0, 1]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 1, 1, 0]
+                        }
+                    ]
+                },
+                {
+                    "question": "Are you a Dinosaur freak?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 1, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 0, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Are you a morning person?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 1, 1, 1, 1, 1]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 0, 0, 0, 0, 0]
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "question": "Do you Spell magic?",
-          "answers": [
-            {
-              "name": "Yes",
-              "charscore": [
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "name": "No",
-              "charscore": [
-                1,
-                0,
-                1
-              ]
-            }
-          ]
+            "id": 2,
+            "characters": ["Barney", "Ted", "Robin", "Lily", "Marshall"],
+            "quizName": "Which How I Met Your Mother character Are you?",
+            "qa": [{
+                    "question": "Do you have a playbook?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [1, 0, 0, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [0, 1, 1, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you prioritize your career over your relationships?",
+                    "answers": [{
+                        "name": "yes",
+                        "charscore": [0, 0, 1, 0, 0]
+                    } ,
+                    {
+                        "name": "no",
+                        "charscore": [1, 1, 0, 1, 1]
+                    }]
+                  },
+
+                {
+                    "question": "Are you a giver in your friendsgroup?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 1, 0]
+                        },
+                        {
+                            "name": "No",
+                            "charscore": [1, 1, 1, 0, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Are you a person with high moral standards?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 0, 1]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 1, 0]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you enjoy philosophy and higher-order thinking?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 1, 0, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 0, 1, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Are you known to have strange and quirky habbits?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 0, 1]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 1, 0]
+                        }
+                    ]
+                },
+                {
+                    "question": "Are you more of a logical thinker rather than emotional one?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 1, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 0, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you like Suit Up?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [1, 0, 0, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [0, 1, 1, 1, 1]
+                        }
+                    ]
+                }
+            ]
         },
+
         {
-          "question": "Do you play chess",
-          "answers": [
-            {
-              "name": "Yes",
-              "charscore": [
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "name": "No",
-              "charscore": [
-                1,
-                1,
-                0
-              ]
-            }
-          ]
+            "id": 3,
+            "characters": ["Wes", "Laurel", "Michaela", "Asher", "Connor"],
+            "quizName": "Which How To Get Away With A Murder character Are you?",
+            "qa": [{
+                    "question": "Are a know-it-all?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 1, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 0, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Are you the puppy in the group?",
+                    "answers": [{
+                        "name": "yes",
+                        "charscore": [1, 0, 0, 0, 0]
+                    },
+                    {
+                        "name": "no",
+                        "charscore": [0, 1, 1, 1, 1]
+                    }]
+                },
+                {
+                    "question": "Do you have a stellar resume?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 1, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 0, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you speak Spanish?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 1, 0, 0, 0]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 0, 1, 1, 1]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you have a good sense of humor?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 0, 1]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 1, 0]
+                        }
+                    ]
+                },
+                {
+                    "question": "Do you keep calm in stressful situations?",
+                    "answers": [{
+                            "name": "yes",
+                            "charscore": [0, 0, 0, 0, 1]
+                        },
+                        {
+                            "name": "no",
+                            "charscore": [1, 1, 1, 1, 0]
+                        }
+                    ]
+                }
+            ]
         }
-      ],
-      "id": 1
-    }
-  ]
+    ]
 }
