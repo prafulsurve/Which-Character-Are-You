@@ -13,6 +13,7 @@ Install npm packages -
 npm install express
 npm install socket.io
 npm install -g json-server
+npm install -g browser-sync
 ```
 
 ## Running the Application
