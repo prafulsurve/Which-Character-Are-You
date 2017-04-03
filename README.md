@@ -1,7 +1,3 @@
-# Which-Character-Are-You
-Which Character Are You Quiz App
-
-
 # Which Character Are You?
 
 This app provides the user to create their own 'Which Character Are You' quiz and they can even play the quiz 
