@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 
-<body>
-    <header>
-        <h1>Quiz 1</h1>
-    </header>
-    <section>
-        <div class="panel panel-default">
-            <div class="panel-body quiz" quiz-questions="form">
-              <form data-quiz="form">
+<body style = "background-color: #D8E4EA">
+    <div class="main-div" style = "background-color: #D8E4EA; list-style-type: none;overflow: hidden">
+      <div style = "background-color: #34495E; list-style-type: none;overflow: hidden">
+        <header>
+            <h1 id="quizname">Quiz 1</h1>
+        </header>
+      </div>
+
+        <div class="panel panel-default" style = "background-color: ##D8E4EA">
+          <div class="panel-body quiz" quiz-questions="form" style = "background-color: #D8E4EA">
+              <form id= "form" data-quiz="form">
               </form>
             </div>
         </div>
@@ -35,7 +38,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/todc-bootstrap/3.3.6-3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>

@@ -3,6 +3,7 @@
             "id": 0,
             "quizName": "Which Harry Potter Character Are You?",
             "characters": ["Harry", "Ron", "Hermoine"],
+            "char_desc" : ["Hey, I am Harry","Hey, I am Ron","Hey, I am Hermoine"],
             "qa": [{
                     "question": "Do you play Chess?",
                     "answers": [{

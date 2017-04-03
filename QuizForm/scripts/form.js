@@ -22,7 +22,8 @@
         console.log(data);
         var $div_form_group = $('<div></div>', {
             'data-quiz': 'div',
-            'class': 'form-group'
+            'class': 'form-group',
+            'style':'background-color: #D8E4EA'
         });
 
         var $button_groups =$('<div></div>', {
@@ -36,12 +37,15 @@
 
         var $reset_button = $('<button></button>', {
             'class' : 'btn btn-primary',
-            'id' : 'reset_btn'
+            'id' : 'reset_btn',
+            'onClick':'this.form.reset()'
+
         });
 
         var $back_button = $('<button></button>', {
             'class' : 'btn btn-primary',
-            'id' : 'back_btn'
+            'id' : 'back_btn',
+            'onClick': 'window.location="http://localhost:3000/play.html"'
         });
 
 
@@ -49,8 +53,7 @@
         $reset_button.html('Reset');
         $back_button.html('Back');
         $button_groups.append($submit_button, $reset_button,$back_button);
-        //$button_groups.append($reset_button);
-        //$button_groups.append($back_button);
+        
 
 
         var $label_questions = new Array();
@@ -63,7 +66,7 @@
             $label_questions[i] = $('<label></label>', {
 
                 'class': 'form-check-label',
-                'style': 'font-size : 20px'
+                'style': 'font-size : 20px , font-style : normal'
             });
 
             $label_questions[i].text(data[i].question);

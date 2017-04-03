@@ -58,3 +58,68 @@ li a {
 .panel panel-default{
   margin: 30px 30px 60px 30px;
 }
+
+.button2:active {
+  background-color: #e7e7e7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {
+    background-color: #C70039;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 200px;
+    cursor: pointer;
+
+}
+
+
+div.cq {
+
+    display: inline-block;
+    float: left;
+    width: 350px;
+    background-color: white;
+    color: black;
+    margin-left: 200px;
+    padding-left: 20px;
+    bottom: 0;
+    left: 0;
+}
+
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #F08080;
+    padding: 20px;
+    width: 700px;
+    height: 580px;
+}
+
+
+div.pq {
+    display: inline-block;
+    float: right;
+    width: 350px;
+    background-color: rgb(216, 228, 234);
+    margin-right: 250px;
+    margin-top: 100px;
+    padding-right: 200px;
+    bottom: 0;
+    right: 0;
+  }
+
+  #rcorners3 {
+      border-radius: 25px;
+
+      padding: 20px;
+      width: 300px;
+      height: 300px;
+  }

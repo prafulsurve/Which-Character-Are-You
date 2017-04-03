@@ -3,16 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Play quiz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/play.css">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/business-and-finance-41/100/question_quiz_mark_bubble_ask_qa-512.png">
+    <style>
+        body {
+            background: rgb(216, 228, 234);
+        }
+
+        h1.about {
+            margin-left: 600px;
+        }
+
+        hr {
+            border-top: 2px solid black;
+        }
+    </style>
   </head>
   <body>
-    <ul>
-      <li><a href="#" target="_top">Quiz1</a></li>
-      <li><a href="#" target="_top">Quiz2</a></li>
-    </ul>
+    <ul class="header-list">
+      <li id="option" class= "option-list">
+          <h1 style="color:white"><span style="font-size:50px; font-family:Verdana">QUIZ</span><span style="font-size:25px; font-family:Comic Sans MS"> Fobia
+        <span class="abc" style="font-size:17px; font-family:times">online quiz creator</span></span></h1></li>
+      <li id="home" class= "option-list"><a href="index.html" class="xyz"><span class="option1" style="font-style: bold">Home</span></a></li>
+      <li id="about" class= "option-list"><a href="team.html" class="xyz"><span class="option2">About</span></a></li>
+      <li id="contact" class= "option-list"><a href="contact.html" class="xyz"><span class="option3" >Contact</span></a></li>
+  </ul>
+      <h1 class="about" style="font-style:bold; text-shadow: 2px 2px white;">Take up a Quiz now!!</h1>
     <section>
-        <div class="panel panel-default">
-            <div class="panel-body quizList" quiz-list="form">
+        <div class="panel panel-default" style= "{background-color: #D8E4EA">
+            <div class="panel-body quizList" quiz-list="form" style= "background-color: #D8E4EA">
               <form data-quizlist="form">
               </form>
             </div>

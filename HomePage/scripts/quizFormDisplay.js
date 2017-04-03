@@ -22,7 +22,9 @@
     console.log('In AddQuizList' + quizList);
     var $div_group = $('<div></div>', {
         'data-quizNames': 'div',
-        'class': 'form-group'
+        'class': 'form-group',
+        'style': 'background-color: #D8E4EA, border: none !important;'
+
     });
 var $list_quiz = new Array();
 var $list_quizurl = new Array();
@@ -30,10 +32,14 @@ var $list_quizurl = new Array();
     for(var i= 0; i< quizList.length; i++){
       var $list_quiz = $ ('<li></li>',{
         'data-filter-text' : 'li',
+        'style': 'color: black',
+        'display':'block'
 
       });
 
-      $list_quizurl[i] = $('<a href="http://localhost:3005/'+ quizList[i].id+'">'+ quizList[i].quizName+'</a>');
+      $list_quizurl[i] = $('<a href="http://localhost:3005/'+ quizList[i].id+'">'+ quizList[i].quizName+'</a>',{
+        'style': 'color:black'
+      });
       $list_quiz.append($list_quizurl[i]);
       $div_group.append($list_quiz);
     }

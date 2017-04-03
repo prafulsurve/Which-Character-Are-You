@@ -15,12 +15,23 @@
   FormHandler.prototype.onLoadHandler= function(remoteServer, fn){
     console.log('In On Load Handler');
     $(document).ready(function(){
+
+      remoteServer.getQuizName(function (data) {
+
+          $('#quizname').html(data).css({"color": "white", "font-size": "200%", "font-family": "Serif", "font-style": "italic,oblique"});
+      });
+
       // passing 0 to fetch quiz 1
       remoteServer.getQuestion(function(data) {
         fn(data);
       });
     });
   };
+
+  FormHandler.prototype.addResetHandler = function(remoteServer,  fn){
+    console.log('In Reset Handler');
+
+  }
 
   FormHandler.prototype.addSubmitHandler = function(remoteServer, fn) {
       console.log('Setting submit handler for form');
@@ -48,9 +59,11 @@
           console.log(sum);
 
           var index = sum.indexOf(Math.max(...sum));
-          remoteServer.getCharacters(function(characters) {
-            fn(characters[index]);
+            remoteServer.getCharacters(function(data) {
+            fn(data.charname[index], data.chardesc[index]);
           })
+
+
       });
   };
 

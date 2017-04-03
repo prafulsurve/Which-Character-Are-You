@@ -33,11 +33,13 @@
 
 
 
-     formHandler.addSubmitHandler(remoteServer, function(data) {
-          console.log(data);
-          $('#myModal .modal-title').text('You are ' + data);
-          $('#myModal .modal-body').text('Char Desc');
+     formHandler.addSubmitHandler(remoteServer, function(char_name, char_desc) {
+          console.log(char_name +',,,,,' +char_desc);
+          if(char_name != null){
+          $('#myModal .modal-title').text('You are ' + char_name);
+          $('#myModal .modal-body').text(char_desc);
           $('#myModal').modal('show');
+        }
       });
     });
 })(window);

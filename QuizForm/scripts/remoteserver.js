@@ -30,6 +30,15 @@
       });
     };
 
+    RemoteServer.prototype.getQuizName = function(cb){
+      $.get(this.serverUrl, function(serverResponse){
+        var quizList= serverResponse.quizName;
+        if(cb){
+          cb(quizList);
+        }
+      });
+    };
+
     RemoteServer.prototype.getQuestion = function(cb) {
       $.get(this.serverUrl, function (serverResponse) {
         var data = serverResponse.qa;
@@ -39,23 +48,18 @@
       });
     };
 
-    RemoteServer.prototype.getQuizName = function(cb){
-      $.get(this.serverUrl, function(serverResponse){
-        var quizList= serverResponse.quizName;
-        if(cb){
-          cb(data);
-        }
-      });
-    }
-
     RemoteServer.prototype.getCharacters = function(cb) {
       $.get(this.serverUrl, function (serverResponse) {
-        var data = serverResponse.characters;
+        var data = {
+          'charname' : serverResponse.characters,
+          'chardesc' : serverResponse.char_desc
+        };
         if(cb) {
             cb(data);
         }
       });
     };
+    
 App.RemoteServer = RemoteServer;
 window.App = App;
 })(window);
