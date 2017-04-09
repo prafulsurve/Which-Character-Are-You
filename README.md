@@ -171,12 +171,12 @@ http://localhost:3000
 *	In order to access the quiz following url is used http://localhost/3002/quiz/[quizid].
 *	POST/quiz – quiz here is the javascript object following the same structure as stored in the db.json. We stringify the quiz object and POST it to json server.
 V.	Client side code:
-*	Home page
+###	Home page
 *	When we run browser-sync our website is hosted locally which is designed using HTML and CSS. As part of background clouds are individually defined with the delay and speed with which it must move. 
 *	A GIF is added to the start creating div to provide additional effects.
-*	Create quiz
+###	Create quiz
 
-*	Quiz form
+###	Quiz form
 
 *	When the user clicks on the quiz url the quiz id is sent as GET method. The GET request is handled by express server, the express server appends the quiz id to json server url and sends back to client using socket.emit().   
 ```javascript
@@ -202,4 +202,3 @@ var remoteServer = new RemoteServer(SERVER_URL);
 ```
 In main.js we have created a handler on formload that will dynamically add dom elements using jquery.
 We have written submit handler that accepts the character scores which are mapped to answer choices that are selected by the users. All the individual character scores are added together and which ever array index has maximum score resembles the index of the character from character array. 
-
