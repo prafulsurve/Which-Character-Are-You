@@ -56,7 +56,7 @@ This documentation will give you a detailed information about the technical back
 ![Screenshot] (Fig2.jpg)
 ![Screenshot] (Fig3.jpg)
 
-![alt text](https://github.com/prafulsurve/Which-Character-Are-You/tree/master/Screenshots/Fig1.jpg)
+!(https://github.com/prafulsurve/Which-Character-Are-You/tree/master/Screenshots/Fig1.jpg)
 
 
 
