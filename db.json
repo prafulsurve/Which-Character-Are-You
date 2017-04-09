@@ -706,6 +706,85 @@
           ]
         }
       ]
+    },
+    {
+      "quizName": "Which  Harry Potter Character Are You?",
+      "characters": [
+        "Harry",
+        "Ron",
+        "Hermione"
+      ],
+      "char_desc": [
+        "You are Harry Potter!!!!",
+        "You are Ron Weasley!!!!",
+        "You are Hermione Granger!!!!"
+      ],
+      "qa": [
+        {
+          "question": "Do you spell magic correctly?",
+          "answers": [
+            {
+              "name": "Yes",
+              "charscore": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "name": "No",
+              "charscore": [
+                1,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "question": "Do you have a scar?",
+          "answers": [
+            {
+              "name": "Yes",
+              "charscore": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "name": "No",
+              "charscore": [
+                0,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "question": "Do you play chess?",
+          "answers": [
+            {
+              "name": "Yes",
+              "charscore": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "name": "No",
+              "charscore": [
+                1,
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "id": 4
     }
   ]
 }
