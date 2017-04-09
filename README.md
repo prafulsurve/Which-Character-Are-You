@@ -55,6 +55,11 @@ This documentation will give you a detailed information about the technical back
 ![Screenshot] (Fig1.jpg)
 ![Screenshot] (Fig2.jpg)
 ![Screenshot] (Fig3.jpg)
+
+![Preview](https://github.com/prafulsurve/Which-Character-Are-You/tree/master/Screenshots/Fig1.jpg)
+
+
+
 Step 2: Create your own quiz.
 - Once you click on Start creating! Button the following webpage will be displayed.
 - You can enter the quiz title, questions and their respective answer options. You can add any number of questions you want by clicking on Add Questions button.
