@@ -176,6 +176,20 @@ V.	Client side code:
 *	A GIF is added to the start creating div to provide additional effects.
 ###	Create quiz
 
+When ‘Create Quiz’ button is clicked, it redirects to the page  **add_form.html**.The form in the page is divided into three sections.The first section provides input fields wherein an user can provide questions and answer choices. Once all the questions and answer choices are provided, when the ‘Next’ button is clicked all the data provided in the input text fields are collected as objects with ‘name and value’ pairs using `serializeArray()` method. Then the collected data is saved in browser's **localStorage** using `localStorage.setItem()` method. The code shown below explains the same:
+
+```javascript
+var data = $('#questions_form').serializeArray();
+     $.each(data,function (i,obj) {
+       console.log(i,obj);
+       localStorage.setItem(obj.name,obj.value);
+     });
+```
+Once the 'Next' button is clicked, the questions section is hidden and the section section- **Outcomes** is displayed and the user has to provide all the possible outcomes (characters) and their respective descriptions. The same concept is used where all the provided data is saved in **localStorage** using `localStorage.setItem()` method.The same applies to the third section where user has to provide the character scores for each question to map each answer choice.
+
+*Pushing the data from localStorage to db.json file*
+After all the user-provided data is stored in the **localStorage**, we created a function `storeDB()`which can be found in the **addQuestion.js** file. This function retrieves the stored data from **localStorage** using `localStorage.getItem()` method. `storeDB()` function creates an object `quiz{}` and adds all the data in the form of attributes and values that is similar to the db.json file format. At last, the `quiz{}`object is added to the `remoteServer`.
+
 ###	Quiz form
 
 *	When the user clicks on the quiz url the quiz id is sent as GET method. The GET request is handled by express server, the express server appends the quiz id to json server url and sends back to client using socket.emit().   
