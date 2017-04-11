@@ -1,23 +1,8 @@
-# SECTION : 02	TEAM: 02 
-## Quiz Fobia - online quiz Creator
-#### Purpose: Create or play a Which Character Are You? Quiz.
-##### I.	Functionality:
-* Users can create a quiz by providing quiz title, question and related answers, the possible characters and their descriptions. The user also need to provide the score of each character associated to each question which will help to calculate their score to identify the character.
-* Users can also play the quiz created and the existing quizzes.
+# Which Character Are You
 
-##### II.	JSON database structure:
-*	The db.json consist of an array of quiz objects as “quiz” with following attributes:
-1.	“id”: this is used as a unique identifier of a quiz.
-2.	“quizname”: It is the title for the quiz.
-3.	“characters”: This is an array which consist of the character’s name.
-4.	“char_desc”: It is an array which consist of the description for each character.
-5.	“qa”: It is an array which hold the entire question and answers of the quiz.
-6.	“question”: It is a sub attribute of “qa” which holds the question.
-7.	“answers”: It is a sub attribute of “qa” which holds the answer choices to the questions.
-8.	“name”: It is a sub attribute of “answers” which holds the choices for questions.
-9.	“charscore”: It a sub attribute of “answers” which holds the score for each answer option for a character.
+Users can create and play their own Which Character Are You quiz.
 
-##### III.	Installation and Execution:
+## Installation and Execution
 
 ##### Getting Started
 
@@ -33,7 +18,7 @@ npm install -g json-server
 npm install -g browser-sync
 ```
 
-## Running the Application
+##### Running the Application
 Run the project by using following commands -
 ```
 cd QuizForm
@@ -52,6 +37,25 @@ If testing on localhost machine the web server will be up and running on -
 ```
 http://localhost:3000
 ```
+
+## Technical Details
+#### Purpose: Create or play a Which Character Are You? Quiz.
+##### I.	Functionality:
+* Users can create a quiz by providing quiz title, question and related answers, the possible characters and their descriptions. The user also need to provide the score of each character associated to each question which will help to calculate their score to identify the character.
+* Users can also play the quiz created and the existing quizzes.
+
+##### II.	JSON database structure:
+*	The db.json consist of an array of quiz objects as “quiz” with following attributes:
+1.	“id”: this is used as a unique identifier of a quiz.
+2.	“quizname”: It is the title for the quiz.
+3.	“characters”: This is an array which consist of the character’s name.
+4.	“char_desc”: It is an array which consist of the description for each character.
+5.	“qa”: It is an array which hold the entire question and answers of the quiz.
+6.	“question”: It is a sub attribute of “qa” which holds the question.
+7.	“answers”: It is a sub attribute of “qa” which holds the answer choices to the questions.
+8.	“name”: It is a sub attribute of “answers” which holds the choices for questions.
+9.	“charscore”: It a sub attribute of “answers” which holds the score for each answer option for a character.
+
 
 ##### IV.	Server Side code:
 1.	Browser-Sync server:
