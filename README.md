@@ -2,6 +2,28 @@
 
 Users can create and play their own Which Character Are You quiz.
 
+## Table of contents
+
+<details>
+
+- [Installation and Execution](#installation-and-execution)
+  * [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Running the Application](#running-the-application)
+- [Technical Details](#technical-details)
+  * [Purpose](#purpose-create-or-play-a-which-character-are-you-quiz)
+    + [Functionality](#functionality)
+    + [JSON database structure](#json-database-structure)
+    + [Server Side Code](#server-side-code)
+    + [Client Side Code](#client-side-code)
+      * [HomePage](#homepage)
+      * [Create Quiz](#create-quiz)
+      * [Quiz Form](#quiz-form)
+- [User Manual](#user-manual)
+
+</details>
+  
+
 ## Installation and Execution
 
 ##### Getting Started
@@ -40,11 +62,11 @@ http://localhost:3000
 
 ## Technical Details
 #### Purpose: Create or play a Which Character Are You? Quiz.
-##### I.	Functionality:
+##### Functionality:
 * Users can create a quiz by providing quiz title, question and related answers, the possible characters and their descriptions. The user also need to provide the score of each character associated to each question which will help to calculate their score to identify the character.
 * Users can also play the quiz created and the existing quizzes.
 
-##### II.	JSON database structure:
+##### JSON database structure:
 *	The db.json consist of an array of quiz objects as “quiz” with following attributes:
 1.	“id”: this is used as a unique identifier of a quiz.
 2.	“quizname”: It is the title for the quiz.
@@ -57,7 +79,7 @@ http://localhost:3000
 9.	“charscore”: It a sub attribute of “answers” which holds the score for each answer option for a character.
 
 
-##### IV.	Server Side code:
+##### Server Side Code:
 1.	Browser-Sync server:
 *	This server is used to host the home page and quiz creation form.
 *	The submit from quiz creation posts a request on json server and stores the quiz in the db.json.
@@ -75,9 +97,9 @@ http://localhost:3000
 
 
 
-##### V. Client Side code:
+##### Client Side Code:
 
-###### Home page
+###### HomePage
 *	When we run browser-sync our website is hosted locally which is designed using HTML and CSS. As part of background clouds are individually defined with the delay and speed with which it must move. 
 *	A GIF is added to the start creating div to provide additional effects.
 
