@@ -76,10 +76,12 @@ http://localhost:3000
 
 
 ##### V. Client Side code:
-###	Home page
+
+###### Home page
 *	When we run browser-sync our website is hosted locally which is designed using HTML and CSS. As part of background clouds are individually defined with the delay and speed with which it must move. 
 *	A GIF is added to the start creating div to provide additional effects.
-###	Create Quiz
+
+###### Create Quiz
 
 When ‘Create Quiz’ button is clicked, it redirects to the page  **add_form.html**.The form in the page is divided into three sections.The first section provides input fields wherein an user can provide questions and answer choices. Once all the questions and answer choices are provided, when the ‘Next’ button is clicked all the data provided in the input text fields are collected as objects with ‘name and value’ pairs using `serializeArray()` method. Then the collected data is saved in browser's **localStorage** using `localStorage.setItem()` method. The code shown below explains the same:
 
@@ -95,7 +97,7 @@ Once the 'Next' button is clicked, the questions section is hidden and the secti
 *Pushing the data from localStorage to db.json file*
 After all the user-provided data is stored in the **localStorage**, we created a function `storeDB()`which can be found in the **addQuestion.js** file. This function retrieves the stored data from **localStorage** using `localStorage.getItem()` method. `storeDB()` function creates an object `quiz{}` and adds all the data in the form of attributes and values that is similar to the db.json file format. At last, the `quiz{}`object is added to the `remoteServer`.
 
-###	Quiz Form
+###### Quiz Form
 
 *	When the user clicks on the quiz url the quiz id is sent as GET method. The GET request is handled by express server, the express server appends the quiz id to json server url and sends back to client using socket.emit().   
 ```javascript
